@@ -1,0 +1,23 @@
+server:
+  port: 9008
+spring:
+  application: 
+     name: spring-JPA-Relationship
+  datasource: 
+     url: jdbc:postgresql://localhost:5432/Book_Photo
+     username: postgres
+     password: admin
+  jpa:
+     hibernate: 
+        ddl-auto: create-drop
+     show-sql: true
+logging:
+  level: 
+    org:
+      hibernate:
+        sql: debug
+        type:
+          descriptor:
+            sql: trace
+      springframework: 
+        web: DEBUG      
